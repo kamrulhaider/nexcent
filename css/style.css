@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --primary-color: #28cb8b;
+  --primary-color: #4caf4f;
   --secondary-color: #263238;
   --bg-color-one: #f5f7fa;
   --text-color: #18191f;
+  --heading-color: #4d4d4d;
+  --para-color: #717171;
 }
 
 body {
@@ -24,12 +26,14 @@ body {
   border: none;
   margin-right: 14px;
 }
-.sign-up-btn {
+.sign-up-btn,
+.register-btn {
   background-color: var(--primary-color);
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
-.sign-up-btn:hover {
+.sign-up-btn:hover,
+.register-btn:hover {
   background-color: #18b073;
 }
 .nav-item a {
@@ -41,4 +45,37 @@ body {
 }
 .nav-item a:hover {
   font-weight: 500;
+}
+
+/* hero section styles  */
+.hero-section {
+  background-color: var(--bg-color-one);
+  margin-bottom: 40px;
+}
+.hero-section-row {
+  min-height: 80vh;
+}
+.hero-content h1 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+.hero-content p {
+  color: var(--para-color);
+}
+.hero-primary-color {
+  color: var(--primary-color);
+}
+.register-btn {
+  border-radius: 4px;
+  border: none;
+}
+.carousel-indicator {
+  height: 10px !important;
+  width: 10px !important;
+  background-color: var(--primary-color) !important;
+  border-radius: 100% !important;
+  opacity: 0.3;
+}
+.carousel-indicator.active {
+  opacity: 1;
 }
